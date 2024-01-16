@@ -24,7 +24,7 @@ pipeline{
         }
         stage('Deploy'){
             steps{
-                sh 'java -jar -DServer.port=8045 target/*.jar'
+                sh 'java -jar -DServer.port=8045 /var/jenkins_home/workspace/scp_declarative/target/*.jar'
             }
         }
     }
