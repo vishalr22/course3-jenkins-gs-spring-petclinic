@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('Checkout'){
             steps{
-                git branch: 'main', url: "https://github.com/g0t4/course3-jenkins-gs-spring-petclinic.git"
+                git branch: 'main', url: "https://github.com/vishalr22/course3-jenkins-gs-spring-petclinic.git"
             }
         }
         stage('Compile'){
