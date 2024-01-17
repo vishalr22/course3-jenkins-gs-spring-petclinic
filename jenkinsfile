@@ -25,7 +25,7 @@ pipeline{
         stage('Deploy'){
             steps{
                 withEnv(['JENKINS_NODE_COOKIE=dontkillme']) {
-                    sh 'nohup java -jar -DServer.port=8045 /var/jenkins_home/workspace/scp_declarative/target/*.jar &'
+                    sh 'java -jar -DServer.port=8045 /var/jenkins_home/workspace/scp_declarative/target/*.jar'
                 }
             }
         }
